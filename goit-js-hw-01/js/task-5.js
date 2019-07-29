@@ -9,32 +9,31 @@ const chile = 'Чили';
 const australia = 'Австралия';
 const india = 'Индия';
 const jamaica = 'Ямайка';
+let message;
 
 switch (сontrySelection) {
   case china:
-    console.log(`Доставка в ${china} будет стоить ${chinaCredits} кредитов`);
+    message = `Доставка в ${china} будет стоить ${chinaCredits} кредитов.`;
     break;
 
   case chile:
-    console.log(`Доставка в ${chile} будет стоить ${chileCredits} кредитов`);
+    message = `Доставка в ${chile} будет стоить ${chileCredits} кредитов.`;
     break;
 
   case australia:
-    console.log(
-      `Доставка в ${australia} будет стоить ${australiaCredits} кредитов`,
-    );
+    message = `Доставка в ${australia} будет стоить ${australiaCredits} кредитов.`;
     break;
 
   case india:
-    console.log(`Доставка в ${india} будет стоить ${indiaCredits} кредитов`);
+    message = `Доставка в ${india} будет стоить ${indiaCredits} кредитов.`;
     break;
 
   case jamaica:
-    console.log(
-      `Доставка в ${jamaica} будет стоить ${jamaicaCredits} кредитов`,
-    );
+    message = `Доставка в ${jamaica} будет стоить ${jamaicaCredits} кредитов.`;
     break;
 
   default:
-    alert('В вашей стране доставка не доступна');
+    alert('В вашей стране доставка не доступна.');
 }
+
+console.log(message);
