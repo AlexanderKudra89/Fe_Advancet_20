@@ -1,19 +1,13 @@
 let input;
 let total = 0;
 
-while () {
+do {
   input = prompt('Введите число');
 
-  if (input === null) {
-    break;
+  if (input !== null) {
+    input = Number(input);
+    total += input;
   }
+} while (input !== null);
 
-  input = Number(input);
-
-  total += input;
-}
-
-if (total) {
-  alert(`Общая сумма чисел равна: ${total}`);
-}
-
+alert(`Общая сумма чисел равна: ${total}`);
