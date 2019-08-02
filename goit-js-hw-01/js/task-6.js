@@ -5,8 +5,7 @@ do {
   input = prompt('Введите число');
 
   if (input !== null) {
-    input = Number(input);
-    total += input;
+    total += Number(input);
   }
 } while (input !== null);
 
