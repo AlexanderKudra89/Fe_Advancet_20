@@ -1,9 +1,7 @@
 const formatString = function(string) {
-  string = string.split(' ');
-  const numberOfSymbols = 40;
-  const paragraphString = numberOfSymbols > 40 ? 
-
-  return string;
+  let numberOfSymbols;
+  string.langth < 40 ? string : (numberOfSymbols = `${string.slice(0, 39)}...`);
+  return numberOfSymbols;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
