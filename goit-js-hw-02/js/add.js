@@ -1,16 +1,7 @@
 const formatString = function(string) {
-  let numberOfSymbols = 0;
-  string = string.split(' ');
-
-  for (let i = 0; i < string.length; i += 1) {
-    numberOfSymbols += 1;
-  }
-
-  if (numberOfSymbols > 40) {
-    string.splice(40, 0, '...');
-  }
-  string = string.join(' ');
-  return string;
+  let numberOfSymbols;
+  string.langth < 40 ? string : (numberOfSymbols = `${string.slice(0, 39)}...`);
+  return numberOfSymbols;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
@@ -24,3 +15,10 @@ console.log(
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
   ),
 );
+////////////////////////////////////////////////////////////////////////////////////
+
+if (string.length < 40) {
+  return string;
+} else {
+  return `${string.slice(0, 39)}...`;
+}

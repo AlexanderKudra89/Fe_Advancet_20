@@ -1,7 +1,5 @@
 const formatString = function(string) {
-  let numberOfSymbols;
-  string.langth < 40 ? string : (numberOfSymbols = `${string.slice(0, 39)}...`);
-  return numberOfSymbols;
+  return string.length < 40 ? string : `${string.slice(0, 39)}...`;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
