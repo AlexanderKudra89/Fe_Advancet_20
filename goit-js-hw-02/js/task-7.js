@@ -4,9 +4,17 @@ let total = 0;
 
 do {
   input = prompt('Введите число');
-  numbers.push(Number(input));
+  if (input === null) {
+    console.log('Отменено пользователем!');
+  }
+  if (input !== null && Number(input) === Number(input)) {
+    numbers.push(input);
+  }
 } while (input !== null);
 for (let number of numbers) {
-  total += number;
+  total += Number(number);
 }
-console.log(`Общая сумма чисел равна [${total}]`);
+
+if (numbers.length !== 0) {
+  console.log(`Общая сумма чисел равна ${total}`);
+}
