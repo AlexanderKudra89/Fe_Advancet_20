@@ -15,6 +15,6 @@ for (let number of numbers) {
   total += Number(number);
 }
 
-if (numbers.length !== 0) {
+if (numbers.length > 0) {
   console.log(`Общая сумма чисел равна ${total}`);
 }
