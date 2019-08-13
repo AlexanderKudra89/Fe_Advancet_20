@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const findBestEmployee = function(tasks) {
   let max = 0;
@@ -14,7 +14,6 @@ const findBestEmployee = function(tasks) {
   }
   return {
     name,
-    maxTasks: max,
   };
 };
 
