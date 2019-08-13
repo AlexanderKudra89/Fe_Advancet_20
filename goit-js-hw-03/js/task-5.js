@@ -12,32 +12,18 @@ const products = [
 
       for (const product of products) {
         if (key in product) {
-            values.push(product[key]);
+           values.push(product[key]);
         }
       }
       return values;
   };
 
-console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
+console.log(getAllPropValues(products, 'name'));
 
-console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+console.log(getAllPropValues(products, 'quantity')); 
 
-console.log(getAllPropValues(products, 'category')); // []
-
-
+console.log(getAllPropValues(products, 'category')); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//   Напиши функцию getAllPropValues(arr, prop), которая получает массив объектов и имя ключа. Возвращает массив значений определенного поля prop из каждого объекта в массиве.
 
 
