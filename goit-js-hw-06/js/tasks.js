@@ -18,7 +18,8 @@ console.log(getUsersWithEyeColor(users, 'blue'));
 
 // Task-3
 const getUsersWithGender = (users, gender) => {
-  return users.filter(user => user.gender === gender);
+  const userGender = users.filter(user => user.gender === gender);
+  return userGender.map(user => user.name);
 };
 
 console.log(getUsersWithGender(users, 'male'));
