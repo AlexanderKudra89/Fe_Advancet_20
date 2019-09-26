@@ -8,6 +8,6 @@ console.log(`В списке ${categoriesItems.length} категории`);
 categoriesItems.forEach(item =>
   console.log(
     `Категория: ${item.children[0].textContent} 
-Количество элементов: ${item.children[1].children.length}`,
+     Количество элементов: ${item.children[1].children.length}`,
   ),
 );
