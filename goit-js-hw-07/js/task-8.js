@@ -23,3 +23,15 @@ function createBoxes(amount) {
   }
   return boxes;
 }
+
+render.addEventListener('click', function addBoxes() {
+  newDiv.innerHTML = createBoxes(input.value).reduce((acc, item) => {
+    acc = acc + item.outerHTML;
+    return acc;
+  }, '');
+});
+
+destroy.addEventListener('click', function destroyDiv() {
+  newDiv.innerHTML = '';
+  input.value = 0;
+});
