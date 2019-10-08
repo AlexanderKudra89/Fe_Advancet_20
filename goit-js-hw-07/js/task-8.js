@@ -14,7 +14,7 @@ function createBoxes(amount) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     let box = document.createElement('div');
     box.style.backgroundColor = `rgb(${getNumber()},${getNumber()},${getNumber()})`;
     box.style.width = boxSize + i * step + 'px';
