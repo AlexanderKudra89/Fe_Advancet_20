@@ -13,6 +13,7 @@ const Theme = {
   LIGHT: 'light-theme',
   DARK: 'dark-theme',
 };
+
 const input = document.querySelector('#theme-switch-control');
 const body = document.querySelector('body');
 
