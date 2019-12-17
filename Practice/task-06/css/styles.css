@@ -53,7 +53,6 @@
 
 .item:hover {
   transition: 200ms linear;
-  border-top: 4px solid #f38181;
   border-bottom: 4px solid #f38181;
   padding: 10px 0;
 }
